@@ -82,38 +82,6 @@ devMiddleware.waitUntilValid(() => {
 
 var server = app.listen(port)
 
-/**
- * Horizon Injection Start
- * Yay!
- */
-
-const horizon = require('@horizon/server');
-// console.log(process.env.NODE_ENV)
-const horizonServer = horizon(server,
-  Object.assign({
-      project_name: 'sun_seminary_bucket',
-    },
-    process.env.NODE_ENV === 'development' ? {
-      auto_create_collection: true,
-      auto_create_index: true,
-      permissions: false,
-      auth: {
-        token_secret: 'my_super_secret_secret',
-        allow_anonymous: true,
-        allow_unauthenticated: true
-      }
-    } : {
-      auth: {
-        token_secret: 'reallyreallysecret'
-      }
-    }
-  )
-);
-
-/**
- * Horizon Injection End
- */
-
 module.exports = {
   ready: readyPromise,
   close: () => {

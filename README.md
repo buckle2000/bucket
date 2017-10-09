@@ -25,3 +25,8 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 - [Vue](https://vuejs.org/v2/guide/)
 - [VueX](https://vuex.vuejs.org/zh-cn/)
 - [RethinkDB Horizon](http://horizon.io/docs/getting-started/)
+
+## TODO
+- add custom login
+- typekit Noto Sans
+- Test permission in yaml

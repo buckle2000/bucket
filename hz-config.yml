@@ -1,0 +1,31 @@
+project_name: "sun_seminary_bucket"
+token_secret: "szZCGmfJIyu36GzuIn1wmslr31vTg2fjm6CkzpqNrtqzJlXrzPjlW36aiQbwUvDL"
+
+# RethinkDB Options
+# 'rdb_user' is the user account to log in with when connecting to RethinkDB
+# 'rdb_password' is the password for the user account specified by 'rdb_user'
+#------------------------------------------------------------------------------
+# rdb_user: 'admin'
+# rdb_password: ''
+# connect: "localhost:28015"
+# start_rethinkdb: false
+# rdb_timeout: 30
+
+# bind: [ "localhost" ]
+# port: 8181
+
+# auto_create_collection: false
+# auto_create_index: false
+# debug: false
+
+auth:
+  allow_unauthenticated: true
+  # allow_anonymous: false
+  # auth_redirect: "/"
+  # access_control_allow_origin: ""
+
+# Permissions
+# groups:
+#   admin:
+#     rules:
+#       shakalaka: {template: "any()"}
